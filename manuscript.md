@@ -1,4 +1,4 @@
-# scripts 1 - 13
+# Akṣarapadīyam
 ### [वेदाक्षर स्वरूपं (Form Of The Vēdākshara)](Script1.pdf)
 ### [वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)](Script2.pdf)
 ### [वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)](Script3.pdf)
