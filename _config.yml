@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 title: vEdaakSharapadeeyaM
 description: vEdaakSharapadeeyaM traditionally refers to a treatise or section that analyzes letters (aksaras) and words (padas), detailing their meanings, phonetics, and grammatical usage.
-
+github:
+  is_project_page: false
 
