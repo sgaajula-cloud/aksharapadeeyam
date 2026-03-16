@@ -11,15 +11,16 @@ padding:20px;
 text-align:center;
 }
 
-/* Navigation menu styling */
+/* Navigation bar */
 nav{
 text-align:center;
 margin-top:10px;
 }
 
 nav a{
+display:inline-block;
 color:white;
-margin:0 40px;
+padding:10px 25px;
 text-decoration:none;
 font-weight:bold;
 font-size:18px;
@@ -41,11 +42,6 @@ text-align:center;
 padding:20px;
 font-size:14px;
 background:#eee;
-}
-
-.sanskrit{
-font-family:'Noto Serif Devanagari', serif;
-font-size:22px;
 }
 
 .sanskrit{
