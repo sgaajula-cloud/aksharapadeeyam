@@ -5,7 +5,7 @@ title: Home
 
 # Welcome
 
-vEdaakSharapadeeyaM is a digital research project dedicated to the study of **Vedic akṣaras (letters)** and **padas (words)**.
+vEdaakSharapadeeyaM is a research project dedicated to the study of **Vedic akṣaras (letters)** and **padas (words)**. vEdaakSharapadeeyaM traditionally refers to a treatise or section that analyzes letters (aksaras) and words (padas), detailing their meanings, phonetics, and grammatical usage.
 
 ## Sanskrit Example
 
@@ -13,4 +13,4 @@ vEdaakSharapadeeyaM is a digital research project dedicated to the study of **Ve
 अग्निमीळे पुरोहितं यज्ञस्य देवम् ऋत्विजम्
 </div>
 
-The project explores phonetics, grammar, and meaning in Vedic Sanskrit.
+The project broadly, can be understood as follows: Akṣara – The individual letters, which in the Vedic tradition possess independent potency and significance. Pada – Words, encompassing their form, grammatical structure, and semantic content. Akṣarapadīyam – A scholarly exposition of the power of letters, their combinations into words, their syntactic usage, and Vedic phonetics. In the Vedic context, an Akṣarapadīyam primarily addresses: Pronunciation and intonation of letters Semantic meanings of words and mantras Phonetic distinctions and tonal variations The integration of human actions with divine operations In essence, an Akṣarapadīyam constitutes a comprehensive explanation of Vedic letters, word formation, and the principles underlying mantra construction.phonetics, grammar, and meaning in Vedic Sanskrit.
