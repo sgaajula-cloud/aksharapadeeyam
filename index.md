@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Home
@@ -14,3 +15,4 @@ vEdaakSharapadeeyaM is a digital research project dedicated to the study of **Ve
 </div>
 
 The project explores phonetics, grammar, and meaning in Vedic Sanskrit.
+
