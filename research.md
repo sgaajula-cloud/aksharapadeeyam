@@ -6,10 +6,20 @@ permalink: /research/
 
 # Research
 
-This section contains the research work related to **vEdaakSharapadeeyaM**.
+This section contains the manuscript research documents for the **vEdaakSharapadeeyaM** project.
 
-## Manuscript Studies
+## Manuscript Collection
 
-Click below to access the manuscript research collection.
-
-[Open Manuscript Research Page](../manuscript/)
+### [वेदाक्षर स्वरूपं (Form Of The Vēdākshara)](Script1.pdf)
+### [वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)](Script2.pdf)
+### [वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)](Script3.pdf)
+### [वेदाक्षर निर्माणं (Formation of the Vēdic Language)](Script4.pdf)
+### [वेदशास्त्राणि - कल्पशास्त्रम् (Vēda Śāstras - Kalpa-śāstra) ](Script5.pdf)
+### [इन्द्रिय देवता अवधारणा  (CONCEPT OF SENSES)](Script6.pdf)
+### [उखा  मंत्राः - उखाग्निः (The Transformative Power of Ukha)](Script7.pdf)
+### [मन्त्रपुष्पम् (Mantrapushpam)](Script8.pdf)
+### [य एवं वेदा -The One Who Knows Thus](Script9.pdf)
+### [वैदिक पथः(The Vēdic Path)](Script10.pdf)
+### [वैदिकरूपस्य प्रयोजनम्  (The Nature and Purpose of the Vēda)](Script11.pdf)
+### [चिनुति (A Study of Divine Manifestation through Yajna)](Script12.pdf)
+### [वैदिक शास्त्र दर्शन -वाज्ञज्ञ  (Vēdic Vēdākshara-Insight -The Yajna of Speech)](Script13.pdf)
