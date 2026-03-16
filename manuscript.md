@@ -10,19 +10,19 @@ This page contains the manuscript research documents for the **vEdaakSharapadeey
 
 ## Research Documents
 
-1. [Script 1](../Script1.pdf)
-2. [Script 2](../Script2.pdf)
-3. [Script 3](../Script3.pdf)
-4. [Script 4](../Script4.pdf)
-5. [Script 5](../Script5.pdf)
-6. [Script 6](../Script6.pdf)
-7. [Script 7](../Script7.pdf)
-8. [Script 8](../Script8.pdf)
-9. [Script 9](../Script9.pdf)
-10. [Script 10](../Script10.pdf)
-11. [Script 11](../Script11.pdf)
-12. [Script 12](../Script12.pdf)
-13. [Script 13](../Script13.pdf)
+1. [वेदाक्षर स्वरूपं (Form Of The Vēdākshara)](../Script1.pdf)
+2. [वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)](../Script2.pdf)
+3. [वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)](../Script3.pdf)
+4. [वेदाक्षर निर्माणं (Formation of the Vēdic Language)](../Script4.pdf)
+5. [वेदशास्त्राणि - कल्पशास्त्रम् (Vēda Śāstras - Kalpa-śāstra) ](../Script5.pdf)
+6. [इन्द्रिय देवता अवधारणा  (Concept Of Senses)](../Script6.pdf)
+7. [उखा  मंत्राः - उखाग्निः (The Transformative Power of Ukha)](../Script7.pdf)
+8. [मन्त्रपुष्पम् (Mantrapushpam)](../Script8.pdf)
+9. [य एवं वेदा -The One Who Knows Thus](../Script9.pdf)
+10. [वैदिक पथः(The Vēdic Path)](../Script10.pdf)
+11. [वैदिकरूपस्य प्रयोजनम्  (The Nature and Purpose of the Vēda)](../Script11.pdf)
+12. [चिनुति (A Study of Divine Manifestation through Yajna)](../Script12.pdf)
+13. [वैदिक शास्त्र दर्शन -वाज्ञज्ञ  (Vēdic Vēdākshara-Insight -The Yajna of Speech)](../Script13.pdf)
 
 
 
