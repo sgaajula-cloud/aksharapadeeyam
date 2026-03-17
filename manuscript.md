@@ -6,7 +6,7 @@ permalink: /manuscript/
 
 # Manuscript Research Collection
 
-This page contains the manuscript research documents for the **vEdaakSharapadeeyaM** project.
+This page contains the manuscript research documents for the **Akṣarapadīyam** project.
 
 ## Research Documents
 
