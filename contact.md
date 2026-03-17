@@ -20,4 +20,4 @@ aksarapadiyam.sonty@gmail.com
 
 ---
 
-For quesions or suggestoins, please contact via email.
+For questions or suggestions, please contact via email.
