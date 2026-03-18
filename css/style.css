@@ -23,16 +23,26 @@ header{
 
 /* LOGO LEFT */
 .header-container img{
-    height:100px;
+    height:110px;     /* bigger */
+    width:auto;
 }
 
 /* TITLE CENTER */
+.header-container{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;   /* instead of space-between */
+    position:relative;
+    padding-left:20px;            /* gives breathing space */
+}
 .header-container div{
     position:absolute;
     left:50%;
     transform:translateX(-50%);
     text-align:center;
+    width:100%;   /* ensures proper centering */
 }
+
 
 /* TITLE */
 header h1{
