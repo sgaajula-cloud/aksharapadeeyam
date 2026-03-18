@@ -61,59 +61,6 @@ nav a{
 
 
 
-/* HEADER */
-header{
-    background:#8B0000;
-    color:#FFD700;
-    padding:15px 30px;
-}
-
-/* LOGO + TITLE */
-.header-container{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.header-container img{
-    height:70px;
-}
-
-/* TITLE */
-header h1{
-    font-size:32px;
-    margin:0;
-    font-family:'Noto Serif Devanagari', serif;
-    color:#FFD700;
-}
-
-/* TAGLINES */
-.tagline{
-    font-size:14px;
-    margin:2px 0;
-}
-
-.university{
-    font-size:13px;
-    margin:2px 0;
-}
-
-/* NAVIGATION */
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    color:#FFD700;
-    margin:0 20px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-nav a:hover{
-    text-decoration:underline;
-}
-
 /* MAIN CONTENT */
 main{
     max-width:900px;
