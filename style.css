@@ -49,27 +49,6 @@ nav a:hover {
 }
 
 
-
-
-
-
-
-nav {
-    margin-top: 10px; /* reduced spacing */
-}
-
-nav a {
-    color: #FFD700;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 /* MAIN CONTENT */
 main {
     max-width: 900px;
