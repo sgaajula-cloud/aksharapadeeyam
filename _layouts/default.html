@@ -102,49 +102,46 @@ const pdfs = [
 function renderPDF(url){
 pdfjsLib.getDocument(url).promise.then(function(pdf){
 pdfDoc = pdf;
-renderPage(1);
+renderAllPages();
 });
 }
 
-function renderPage(num){
-pdfDoc.getPage(num).then(function(page){
-
+function renderAllPages(){
 let container = document.getElementById("pdfViewer");
+container.innerHTML = "";
 
-/* BASE VIEWPORT */
-let viewport = page.getViewport({ scale: 1 });
+/* LOOP THROUGH ALL PAGES */
+for(let i = 1; i <= pdfDoc.numPages; i++){
 
-/* AUTO FIT WIDTH */
-let fitScale = (container.clientWidth * 0.8) / viewport.width;
+pdfDoc.getPage(i).then(function(page){
 
-/* APPLY USER ZOOM */
-let finalScale = fitScale * scale;
-
-let scaledViewport = page.getViewport({ scale: finalScale });
+let viewport = page.getViewport({ scale: scale });
 
 let canvas = document.createElement("canvas");
 let ctx = canvas.getContext("2d");
 
-canvas.height = scaledViewport.height;
-canvas.width = scaledViewport.width;
+canvas.height = viewport.height;
+canvas.width = viewport.width;
 
-container.innerHTML = "";
 container.appendChild(canvas);
 
 page.render({
 canvasContext: ctx,
-viewport: scaledViewport
+viewport: viewport
 });
 
-/* PAGE NUMBER */
+});
+
+}
+
+/* PAGE COUNT DISPLAY */
 document.getElementById("pageIndicator").innerText =
-num + " / " + pdfDoc.numPages;
-
-});
+"1 - " + pdfDoc.numPages;
 }
 
 function openPDF(index){
 currentIndex = index;
+
 document.getElementById("pdfModal").style.display = "block";
 document.body.style.overflow = "hidden";
 
@@ -168,15 +165,18 @@ currentIndex = (currentIndex - 1 + pdfs.length) % pdfs.length;
 openPDF(currentIndex);
 }
 
+/* ZOOM WORKS AGAIN */
 function zoomIn(){
 scale += 0.2;
-renderPage(1);
+renderPDF(pdfs[currentIndex]);
 }
 
 function zoomOut(){
-scale = Math.max(0.5, scale - 0.2);
-renderPage(1);
+scale = Math.max(0.6, scale - 0.2);
+renderPDF(pdfs[currentIndex]);
 }
+
+  
 </script>
 
 
