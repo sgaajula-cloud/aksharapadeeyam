@@ -4,261 +4,60 @@
 <meta charset="UTF-8">
 <title>{{ page.title }}</title>
 
+<!-- Link to your CSS -->
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
 <!-- Sanskrit Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
 
+<!-- PDF.js Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-
-<style>
-/* ================== BODY ================== */
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f9f6f2;
-}
-
-/* HEADER */
-header{
-    background:#8B0000;
-    color:#FFD700;
-    padding:20px 30px; /* reduced for smaller height */
-    border-bottom:4px solid #FFD700;
-}
-
-/* HEADER LAYOUT */
-.header-container{
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    position:relative;
-}
-
-/* LOGO */
-.header-container img{
-    height:100px;
-    margin-right:20px;
-}
-
-/* CENTER TITLE */
-.header-container div{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    text-align:center;
-}
-
-/* TITLE */
-header h1 {
-    font-size:40px; /* bigger */
-    margin:0;
-    font-family:'Noto Serif Devanagari', serif;
-    color:#FFD700;
-}
-
-/* NAVIGATION */
-nav{
-    margin-top:15px;
-    text-align:center;
-}
-
-nav a{
-    color:#fff; /* white for Home, Text, Research, Contact */
-    margin:0 20px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-}
-
-nav a:hover{
-    color:#FFD700;
-}
-
-/* MAIN CONTENT */
-main{
-    max-width:900px;
-    margin:30px auto;
-    padding:30px;
-    background:white;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    border-top:5px solid #FFD700;
-}
-
-/* FOOTER */
-footer{
-    background:#8B0000;
-    color:#FFD700;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
-
-/* SANSKRIT TEXT */
-.sanskrit{
-    font-family:'Noto Serif Devanagari', serif;
-    font-size:22px;
-    line-height:1.8;
-    color:#8B0000;
-}
-
-/* HEADINGS */
-h1, h2, h3{
-    font-family: Georgia, serif;
-    color:#8B0000;
-}
-
-/* MODAL */
-.modal{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.95);
-    z-index:9999;
-}
-
-/* PDF HEADER */
-.pdf-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:#111;
-    color:#FFD700;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 20px;
-    z-index:10000;
-}
-
-/* PDF TITLE */
-.pdf-header span#pdfTitle{
-    font-weight:bold;
-    font-size:16px;
-    max-width:50%;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-}
-
-/* PDF HEADER BUTTONS */
-.pdf-header div{
-    display:flex;
-    gap:6px;
-}
-
-/* BUTTON STYLE */
-.pdf-header button{
-    background:#FFD700;
-    border:none;
-    padding:5px 10px;
-    font-weight:bold;
-    cursor:pointer;
-    border-radius:4px;
-    font-size:14px;
-}
-
-/* PDF VIEWER */
-#pdfViewer{
-    width:100%;
-    height:100vh;
-    overflow-y:auto;
-    overflow-x:hidden;
-    background:#222;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding-top:70px; /* space for PDF header */
-    box-sizing:border-box;
-}
-
-/* PDF CANVAS */
-#pdfViewer canvas{
-    width:90% !important; /* responsive */
-    height:auto !important;
-    margin-bottom:20px;
-    box-shadow:0 0 15px rgba(0,0,0,0.5);
-    background:white;
-}
-
-/* CLOSE BUTTON */
-.close{
-    position:fixed;
-    top:10px;
-    right:20px;
-    color:white;
-    font-size:25px;
-    cursor:pointer;
-    z-index:10001;
-}
-
-/* MANUSCRIPTS BUTTONS */
-.manuscripts button{
-    display:block;
-    width:100%;
-    background:white;
-    color:#8B0000;
-    border:1px solid #ccc;
-    padding:12px;
-    margin:8px 0;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-}
-
-.manuscripts button:hover{
-    background:#f3f3f3;
-}
-</style>
 </head>
 
 <body>
 
 <header>
-<div class="header-container">
-<img src="{{ site.baseurl }}/assets/logo.png" alt="University Logo">
-<div>
-<h1>Akṣarapadīyam</h1>
-<p style="font-size:14px; margin:2px 0;">A Vedic Linguistic Research Project</p>
-<p style="font-size:13px; margin:2px 0;">University of Applied Vedic Sciences (Online)</p>
-</div>
-</div>
+  <div class="header-container">
+    <img src="{{ site.baseurl }}/assets/logo.png" alt="University Logo">
+    <div>
+      <h1>Akṣarapadīyam</h1>
+      <p class="tagline">A Vedic Linguistic Research Project</p>
+      <p class="university">University of Applied Vedic Sciences (Online)</p>
+    </div>
+  </div>
 
-<nav>
-<a href="{{ site.baseurl }}/">Home</a>
-<a href="{{ site.baseurl }}/text/">Text</a>
-<a href="{{ site.baseurl }}/research/">Research</a>
-<a href="{{ site.baseurl }}/contact/">Contact</a>
-</nav>
+  <nav>
+    <a href="{{ site.baseurl }}/">Home</a>
+    <a href="{{ site.baseurl }}/text/">Text</a>
+    <a href="{{ site.baseurl }}/research/">Research</a>
+    <a href="{{ site.baseurl }}/contact/">Contact</a>
+  </nav>
 </header>
 
 <main>
-{{ content }}
+  {{ content }}
 </main>
 
 <footer>
-<p>© 2025 Akṣarapadīyam Research Project</p>
-<p>Sarada Purna Sonty | University of Applied Vedic Sciences (Online)</p>
-<p style="font-size:12px;">All rights reserved. This site is part of an academic research initiative in Vedic linguistics.</p>
+  <p>© 2025 Akṣarapadīyam Research Project</p>
+  <p>Sarada Purna Sonty | University of Applied Vedic Sciences (Online)</p>
+  <p style="font-size:12px;">All rights reserved. This site is part of an academic research initiative in Vedic linguistics.</p>
 </footer>
 
-<!-- ===== PDF MODAL ===== -->
+<!-- PDF MODAL -->
 <div id="pdfModal" class="modal">
-    <div class="pdf-header">
-        <span id="pdfTitle">Title</span>
-        <div>
-            <button onclick="prevPDF()">◀ Prev</button>
-            <span id="pageIndicator">0/0</span>
-            <button onclick="nextPDF()">Next ▶</button>
-            <button onclick="zoomOut()">-</button>
-            <button onclick="zoomIn()">+</button>
-            <button onclick="closePDF()">✖ Close</button>
-        </div>
+  <div class="pdf-header">
+    <span id="pdfTitle">Title</span>
+    <div>
+      <button onclick="prevPDF()">◀ Prev</button>
+      <span id="pageIndicator">0 / 0</span>
+      <button onclick="nextPDF()">Next ▶</button>
+      <button onclick="zoomOut()">-</button>
+      <button onclick="zoomIn()">+</button>
+      <button onclick="closePDF()">✖ Close</button>
     </div>
-    <div id="pdfViewer"></div>
+  </div>
+  <div id="pdfViewer"></div>
 </div>
 
 <script>
@@ -267,101 +66,95 @@ let scale = 1.5;
 let pdfDoc = null;
 
 const titles = [
-"वेदाक्षर स्वरूपं (Form Of The Vēdākshara)",
-"वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)",
-"वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)",
-"वेदाक्षर निर्माणं (Formation of the Vēdic Language)",
-"वेदशास्त्राणि - कल्पशास्त्रम् (Vēda Śāstras - Kalpa-śāstra)",
-"इन्द्रिय देवता अवधारणा  (Concept Of Senses)",
-"उखा  मंत्राः - उखाग्निः (The Transformative Power of Ukha)",
-"मन्त्रपुष्पम् (Mantrapushpam)",
-"य एवं वेदा - (The One Who Knows Thus)",
-"वैदिक पथः(The Vēdic Path)",
-"वैदिकरूपस्य प्रयोजनम्  (The Nature and Purpose of the Vēda)",
-"चिनुति (A Study of Divine Manifestation through Yajna)",
-"वैदिक शास्त्र दर्शन -वाज्ञज्ञ  (Vēdic Vēdākshara-Insight -The Yajna of Speech)"
+  "वेदाक्षर स्वरूपं (Form Of The Vēdākshara)",
+  "वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)",
+  "वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)",
+  "वेदाक्षर निर्माणं (Formation of the Vēdic Language)",
+  "वेदशास्त्राणि - कल्पशास्त्रम् (Vēda Śāstras - Kalpa-śāstra)",
+  "इन्द्रिय देवता अवधारणा  (Concept Of Senses)",
+  "उखा  मंत्राः - उखाग्निः (The Transformative Power of Ukha)",
+  "मन्त्रपुष्पम् (Mantrapushpam)",
+  "य एवम् वेदा - (The One Who Knows Thus)",
+  "वैदिक पथः(The Vēdic Path)",
+  "वैदिकरूपस्य प्रयोजनम्  (The Nature and Purpose of the Vēda)",
+  "चिनुति (A Study of Divine Manifestation through Yajna)",
+  "वैदिक शास्त्र दर्शन -वाज्ञज्ञ  (Vēdic Vēdākshara-Insight -The Yajna of Speech)"
 ];
 
 const pdfs = [
-"{{ site.baseurl }}/Script1.pdf",
-"{{ site.baseurl }}/Script2.pdf",
-"{{ site.baseurl }}/Script3.pdf",
-"{{ site.baseurl }}/Script4.pdf",
-"{{ site.baseurl }}/Script5.pdf",
-"{{ site.baseurl }}/Script6.pdf",
-"{{ site.baseurl }}/Script7.pdf",
-"{{ site.baseurl }}/Script8.pdf",
-"{{ site.baseurl }}/Script9.pdf",
-"{{ site.baseurl }}/Script10.pdf",
-"{{ site.baseurl }}/Script11.pdf",
-"{{ site.baseurl }}/Script12.pdf",
-"{{ site.baseurl }}/Script13.pdf"
+  "{{ site.baseurl }}/Script1.pdf",
+  "{{ site.baseurl }}/Script2.pdf",
+  "{{ site.baseurl }}/Script3.pdf",
+  "{{ site.baseurl }}/Script4.pdf",
+  "{{ site.baseurl }}/Script5.pdf",
+  "{{ site.baseurl }}/Script6.pdf",
+  "{{ site.baseurl }}/Script7.pdf",
+  "{{ site.baseurl }}/Script8.pdf",
+  "{{ site.baseurl }}/Script9.pdf",
+  "{{ site.baseurl }}/Script10.pdf",
+  "{{ site.baseurl }}/Script11.pdf",
+  "{{ site.baseurl }}/Script12.pdf",
+  "{{ site.baseurl }}/Script13.pdf"
 ];
 
-// Render PDF with high resolution
 function renderPDF(url){
-    pdfjsLib.getDocument(url).promise.then(function(pdf){
-        pdfDoc = pdf;
-        renderAllPages();
-    });
+  pdfjsLib.getDocument(url).promise.then(function(pdf){
+    pdfDoc = pdf;
+    renderAllPages();
+  });
 }
 
 function renderAllPages(){
-    const container = document.getElementById("pdfViewer");
-    container.innerHTML = "";
-    
-    for(let i=1;i<=pdfDoc.numPages;i++){
-        pdfDoc.getPage(i).then(function(page){
-            const viewport = page.getViewport({scale: scale});
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
-            
-            // set canvas at PDF resolution to avoid blurring
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-            
-            container.appendChild(canvas);
-            
-            page.render({canvasContext: ctx, viewport: viewport}).promise.then(()=>{
-                if(i===1){
-                    document.getElementById("pageIndicator").innerText = `1 - ${pdfDoc.numPages}`;
-                }
-            });
-        });
-    }
+  let container = document.getElementById("pdfViewer");
+  container.innerHTML = "";
+
+  for(let i = 1; i <= pdfDoc.numPages; i++){
+    pdfDoc.getPage(i).then(function(page){
+      let viewport = page.getViewport({ scale: scale });
+      let canvas = document.createElement("canvas");
+      let ctx = canvas.getContext("2d");
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      container.appendChild(canvas);
+
+      page.render({ canvasContext: ctx, viewport: viewport });
+    });
+  }
+  // Update page indicator after rendering
+  document.getElementById("pageIndicator").innerText = `1 / ${pdfDoc.numPages}`;
 }
 
 function openPDF(index){
-    currentIndex = index;
-    document.getElementById("pdfModal").style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.getElementById("pdfTitle").innerText = titles[index];
-    renderPDF(pdfs[index]);
+  currentIndex = index;
+  document.getElementById("pdfModal").style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.getElementById("pdfTitle").innerText = titles[index];
+  renderPDF(pdfs[index]);
 }
 
 function closePDF(){
-    document.getElementById("pdfModal").style.display = "none";
-    document.body.style.overflow = "auto";
+  document.getElementById("pdfModal").style.display = "none";
+  document.body.style.overflow = "auto";
 }
 
 function nextPDF(){
-    currentIndex = (currentIndex+1)%pdfs.length;
-    openPDF(currentIndex);
+  currentIndex = (currentIndex + 1) % pdfs.length;
+  openPDF(currentIndex);
 }
 
 function prevPDF(){
-    currentIndex = (currentIndex-1+pdfs.length)%pdfs.length;
-    openPDF(currentIndex);
+  currentIndex = (currentIndex - 1 + pdfs.length) % pdfs.length;
+  openPDF(currentIndex);
 }
 
 function zoomIn(){
-    scale += 0.2;
-    renderPDF(pdfs[currentIndex]);
+  scale += 0.2;
+  renderPDF(pdfs[currentIndex]);
 }
 
 function zoomOut(){
-    scale = Math.max(0.6,scale-0.2);
-    renderPDF(pdfs[currentIndex]);
+  scale = Math.max(0.6, scale - 0.2);
+  renderPDF(pdfs[currentIndex]);
 }
 </script>
 
