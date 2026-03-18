@@ -74,6 +74,41 @@ currentIndex = (currentIndex - 1 + pdfs.length) % pdfs.length;
 document.getElementById("pdfFrame").src = pdfs[currentIndex];
 }
 </script>
+
+
+<script>
+let currentIndex = 0;
+
+const pdfs = [
+"{{ site.baseurl }}/Script1.pdf#toolbar=0&zoom=page-width",
+"{{ site.baseurl }}/Script2.pdf#toolbar=0&zoom=page-width",
+"{{ site.baseurl }}/Script3.pdf#toolbar=0&zoom=page-width"
+];
+
+function openPDF(index){
+currentIndex = index;
+document.getElementById("pdfModal").style.display = "block";
+document.getElementById("pdfFrame").src = pdfs[index];
+document.body.style.overflow = "hidden";
+}
+
+function closePDF(){
+document.getElementById("pdfModal").style.display = "none";
+document.getElementById("pdfFrame").src = "";
+document.body.style.overflow = "auto";
+}
+
+function nextPDF(){
+currentIndex = (currentIndex + 1) % pdfs.length;
+document.getElementById("pdfFrame").src = pdfs[currentIndex];
+}
+
+function prevPDF(){
+currentIndex = (currentIndex - 1 + pdfs.length) % pdfs.length;
+document.getElementById("pdfFrame").src = pdfs[currentIndex];
+}
+</script>
+  
   
 <body>
 
@@ -124,3 +159,5 @@ All rights reserved. This site is part of an academic research initiative in Ved
 
 </body>
 </html>
+
+
