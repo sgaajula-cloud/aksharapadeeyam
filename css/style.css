@@ -5,11 +5,12 @@ background:#f9f6f2;
 }
 
 /* HEADER */
-header{
-background:#8B0000;
-color:#FFD700;
-padding:20px;
-text-align:center;
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;   /* change to white if header is dark */
+    font-family: 'Noto Serif Devanagari', serif;
+    display: block;
 }
 
 /* LOGO + TITLE */
