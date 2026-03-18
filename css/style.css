@@ -5,29 +5,33 @@ body{
     background:#f9f6f2;
 }
 
-
-
-
 /* HEADER */
 header{
     background:#8B0000;
     color:#FFD700;
-    padding:20px 0;
-    text-align:center;   /* KEY LINE */
+    padding:20px 40px;
+    border-bottom:4px solid #FFD700;  /* ✅ GOLD LINE */
 }
 
-/* CENTER EVERYTHING */
+/* HEADER LAYOUT */
 .header-container{
     display:flex;
-    flex-direction:column;   /* STACK vertically */
-    align-items:center;      /* CENTER horizontally */
-    justify-content:center;
-    gap:10px;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
 }
 
-/* LOGO CENTERED */
+/* LOGO LEFT */
 .header-container img{
     height:70px;
+}
+
+/* TITLE CENTER */
+.header-container div{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
 }
 
 /* TITLE */
@@ -39,26 +43,32 @@ header h1{
 }
 
 /* TEXT */
-.tagline, .university{
-    margin:0;
+.tagline{
+    font-size:14px;
+    margin:2px 0;
 }
 
-/* NAVIGATION CENTER */
+.university{
+    font-size:13px;
+    margin:2px 0;
+}
+
+/* NAVIGATION */
 nav{
-    margin-top:15px;
+    margin-top:20px;
     text-align:center;
 }
 
 nav a{
     color:#FFD700;
-    margin:0 15px;
+    margin:0 20px;
     text-decoration:none;
     font-weight:bold;
 }
 
-
-
-
+nav a:hover{
+    text-decoration:underline;
+}
 
 
 /* MAIN CONTENT */
