@@ -210,3 +210,16 @@ font-weight:bold;
 cursor:pointer;
 border-radius:5px;
 }
+
+#pdfViewer{
+width:100%;
+height:calc(100vh - 70px);
+overflow:auto;
+text-align:center;
+background:#333;
+}
+
+#pdfViewer canvas{
+margin:20px auto;
+display:block;
+}
