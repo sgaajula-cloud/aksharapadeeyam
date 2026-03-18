@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari&display=swap" rel="stylesheet">
 
 </head>
-
+  
 <script>
 let currentIndex = 0;
 
@@ -99,6 +99,90 @@ All rights reserved. This site is part of an academic research initiative in Ved
 
 </footer>
 
+<!-- ✅ ADD HERE -->
+<script>
+let currentIndex = 0;
+let zoomLevel = 125;
+
+const titles = [
+"वेदाक्षर स्वरूपं (Form Of The Vēdākshara)",
+"वेदाक्षरोच्चारण (Pronunciation Of The Vēdākshara)",
+"वेदाक्षर यज्ञं  (Origination Of The Vēdākshara)",
+"वेदाक्षर निर्माणं (Formation of the Vēdic Language)",
+"वेदशास्त्राणि - कल्पशास्त्रम् (Vēda Śāstras - Kalpa-śāstra)",
+"इन्द्रिय देवता अवधारणा  (Concept Of Senses)",
+"उखा  मंत्राः - उखाग्निः (The Transformative Power of Ukha)",
+"मन्त्रपुष्पम् (Mantrapushpam)",
+"य एवं वेदा - (The One Who Knows Thus)",
+"वैदिक पथः(The Vēdic Path)",
+"वैदिकरूपस्य प्रयोजनम्  (The Nature and Purpose of the Vēda)",
+"चिनुति (A Study of Divine Manifestation through Yajna)",
+"वैदिक शास्त्र दर्शन -वाज्ञज्ञ  (Vēdic Vēdākshara-Insight -The Yajna of Speech)"
+];
+
+const pdfs = [
+"{{ site.baseurl }}/Script1.pdf",
+"{{ site.baseurl }}/Script2.pdf",
+"{{ site.baseurl }}/Script3.pdf",
+"{{ site.baseurl }}/Script4.pdf",
+"{{ site.baseurl }}/Script5.pdf",
+"{{ site.baseurl }}/Script6.pdf",
+"{{ site.baseurl }}/Script7.pdf",
+"{{ site.baseurl }}/Script8.pdf",
+"{{ site.baseurl }}/Script9.pdf",
+"{{ site.baseurl }}/Script10.pdf",
+"{{ site.baseurl }}/Script11.pdf",
+"{{ site.baseurl }}/Script12.pdf",
+"{{ site.baseurl }}/Script13.pdf"
+];
+
+function loadPDF(){
+document.getElementById("pdfFrame").src =
+pdfs[currentIndex] + "#toolbar=0&zoom=" + zoomLevel;
+
+document.getElementById("pdfTitle").innerText = titles[currentIndex];
+
+document.getElementById("pageIndicator").innerText =
+(currentIndex + 1) + " / " + pdfs.length;
+}
+
+function openPDF(index){
+currentIndex = index;
+document.getElementById("pdfModal").style.display = "block";
+document.body.style.overflow = "hidden";
+loadPDF();
+}
+
+function closePDF(){
+document.getElementById("pdfModal").style.display = "none";
+document.getElementById("pdfFrame").src = "";
+document.body.style.overflow = "auto";
+}
+
+function nextPDF(){
+currentIndex = (currentIndex + 1) % pdfs.length;
+loadPDF();
+}
+
+function prevPDF(){
+currentIndex = (currentIndex - 1 + pdfs.length) % pdfs.length;
+loadPDF();
+}
+
+function zoomIn(){
+zoomLevel += 25;
+loadPDF();
+}
+
+function zoomOut(){
+zoomLevel = Math.max(50, zoomLevel - 25);
+loadPDF();
+}
+</script>
+
+</body>
+</html>
+  
 </body>
 </html>
 
