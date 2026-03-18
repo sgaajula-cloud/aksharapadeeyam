@@ -12,13 +12,15 @@ padding:20px;
 text-align:center;
 }
 
-/* LOGO + TITLE */
-.header-container{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+/* HEADER */
+header {
+  background: #8B0000;
+  color: #FFD700;
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px; /* limit header width */
+  margin: 0 auto;    /* center the header */
+  box-sizing: border-box;
 }
 
 header img{
