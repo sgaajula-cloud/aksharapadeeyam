@@ -15,6 +15,9 @@ Akṣarapadīyam – Vedic Linguistic Research
 ## Email
 aksarapadiyam.sonty@gmail.com
 
+## Facebook
+https://www.facebook.com/saradapurna.sonty
+
 ## Academic Guidance
 **Dr. Sri. Venkata Ramana Chaganti**
 
